@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">用户菜单设置</string>
+    <string name="hello">用户菜单设置</string>
+    <string name="name_label">姓名:</string>
+    <string name="pwd_label">密码:</string>
+    <string name="sexy_label">性别:</string>
+    <string name="isused_label">是否有效:</string>
+    <string name="add">添加数据</string>
+    <string name="query_all">全部显示</string>
+    <string name="clear">清除显示</string>
+    <string name="delete_all">全部删除</string>
+</resources>

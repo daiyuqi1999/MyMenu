@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="第二页面" />
+    <RelativeLayout android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText android:id="@+id/name"
+            android:text=""
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip" >
+        </EditText>
+        <TextView android:id="@+id/name_label"
+            android:text="@string/name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@id/name"
+            android:layout_alignBaseline="@+id/name">
+        </TextView>
+
+        <EditText android:id="@+id/pwd"
+            android:text=""
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:layout_below="@id/name"
+            android:inputType="number">
+        </EditText>
+        <TextView android:id="@+id/pwd_label"
+            android:text="@string/pwd_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@id/pwd"
+            android:layout_alignBaseline="@+id/pwd" >
+        </TextView>
+        <RadioGroup android:id="@+id/RadioGroup01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/pwd"
+            android:layout_alignParentRight="true"
+            >
+            <RadioButton android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                >
+            </RadioButton>
+            <RadioButton android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女" >
+            </RadioButton>
+        </RadioGroup>
+
+
+        <TextView android:id="@+id/sexy_label"
+            android:text="@string/sexy_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@id/RadioGroup01"
+            android:layout_below="@id/pwd"
+            android:layout_alignBaseline="@id/RadioGroup01"
+            >
+        </TextView>
+
+        <RadioGroup android:id="@+id/RadioGroup02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/RadioGroup01"
+            android:layout_alignParentRight="true"
+            >
+            <RadioButton android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                >
+            </RadioButton>
+            <RadioButton android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否" >
+            </RadioButton>
+        </RadioGroup>
+        <TextView android:id="@+id/isused_label"
+            android:text="@string/isused_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/RadioGroup01">
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/add"
+            android:text="@string/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding = "5dip"
+            android:layout_weight="1">
+        </Button>
+        <Button android:id="@+id/query_all"
+            android:text="@string/query_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding = "5dip"
+            android:layout_weight="1">
+        </Button>
+        <Button android:id="@+id/clear"
+            android:text="@string/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding = "5dip"
+            android:layout_weight="1">
+        </Button>
+        <Button	android:id="@+id/delete_all"
+            android:text="@string/delete_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding = "5dip"
+            android:layout_weight="1">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/LinearLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView android:text="ID："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding = "3dip">
+        </TextView>
+        <EditText android:id="@+id/id_entry"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding = "3dip"
+            android:layout_weight="1">
+        </EditText>
+        <Button android:id="@+id/delete"
+            android:text="ID删除"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding = "3dip"
+            android:layout_weight="1">
+        </Button>
+        <Button android:id="@+id/query"
+            android:text="ID查询"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding = "3dip"
+            android:layout_weight="1">
+        </Button>
+        <Button android:id="@+id/update"
+            android:text="ID更新"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding = "3dip"
+            android:layout_weight="1">
+        </Button>
+    </LinearLayout>
+
+    <TextView android:id="@+id/label"
+        android:text="查询结果："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <ScrollView  android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView android:id="@+id/display"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
